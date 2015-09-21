@@ -8,6 +8,13 @@ We hope you find exactly what you're looking for in a place to stay.
   {{/each}}
 </ul>
 
+<ul>
+  {{#each model as |city|}}
+    <li>{{city.attraction}} in {{city.name}} {{city.image}}</li>
+  {{/each}}
+</ul>
+
+
 {{new-rental save2="save3"}}
 
 {{#link-to 'about'}}About{{/link-to}}
