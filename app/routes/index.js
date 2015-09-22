@@ -13,6 +13,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
+    update(rental, params) {
+      //code
+      rental.save();
+      this.transitionTo('index');
+    },
+
     destroyRental(rental) {
       rental.destroyRecord();
       this.transitionTo('index');
