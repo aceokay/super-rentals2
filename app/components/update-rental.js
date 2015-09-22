@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     },
     update(rental) {
       var params = {
-        owner:this.get('owner'),
+        owner: this.get('owner'),
         city: this.get('city'),
         type: this.get('type'),
         image: this.get('image'),
